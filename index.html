@@ -77,16 +77,47 @@
 
 
           <div class="modal-content">
-            <p class="leave-data-text">Zostaw swoje dane w formularzu poniżej</p>
-            <form class="modal-form">
+            <h3 class="leave-data-text">Zostaw swoje dane w formularzu poniżej</h3>
+
+            <form class="my-form">
+
               <fieldset class="fieldset" >
+                
               <label class="modal-form-label" for="name">Imię</label>
-              <svg class="form-icon">
+              <svg class="form-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input type="text" placeholder="" id="name" />
+              <input class="input" type="text" placeholder="" id="name" />
             </fieldset>
+
+            <fieldset class="fieldset" >
+                
+              <label class="modal-form-label" for="name">Telefon</label>
+              <svg class="form-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+              <input class="input" type="text" placeholder="" id="name" />
+            </fieldset>
+
+            <fieldset class="fieldset" >
+                
+              <label class="modal-form-label" for="name">Email</label>
+              <svg class="form-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail-form" viewBox="0 0 32 32">
+                  <path d="M28 4h-24c-1.65 0"></use>
+              </svg>
+              <input class="input" type="text" placeholder="" id="name" />
+            </fieldset>
+
+            <fieldset class="fieldset-comment" >
+                
+              <label class="modal-form-label" for="name">Komentarz</label>
+             
+              <input class="input-comment" type="text" placeholder="Wprowadź tekst" id="name" />
+            </fieldset>
+
             </form>
+
           </div>
           
         </div>

@@ -930,8 +930,6 @@ color: var(--main-white);
 
 .modal {
   position: relative;
-  /* display: flex;
-  justify-content: center; */
   height: 581px;
   width: 528px;
   background-color: var(--main-white);
@@ -956,72 +954,99 @@ color: var(--main-white);
    
 }
 
-/* .modal-content {
-  position: relative;
+.my-form {
+  margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  top: 40px;
-  width: 448px;
-  left: auto;
-} */
+  width: 100%;
 
-/* .leave-data-text {
-position: relative;
-top: 40px;
-left: 0;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color:var(--black-main);
-} */
-
-/* .modal-form-field-1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  top: 93px;
- 
- 
-   
 }
 
-input {
-  width: 448px;
+
+
+.input {
+  width: 446px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-label {
-  position: relative;
-  left: 0;
-} */
 
-.modal-form {
+
+.leave-data-text {
   margin-top: 40px;
-}
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--black-main);
+  }
 
 .fieldset {
-  display: flex;
   position: relative;
+  width: 448px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  margin-bottom: 28px;
+  
 }
 
-.modal-form .form-icon {
-  width: 12px;
-  height: 12px;
+.fieldset-comment {
+  position: relative;
+  width: 448px;
+  height: 120px;
+  border: 0;
+  background-color: transparent;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  margin-bottom: 28px;
+  
 }
 
-.modal-form .modal-form-label {
+.input-comment {
+  width: 446px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  text-align: start;
+
+}
+
+.input-comment::placeholder {
   position: absolute;
-  top: -12px;
+  top: 12px;
+  left: 16px;
+  text-align: start;
+ 
+}
+
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+
+.modal-form-label {
+  position: absolute;
+  top: -20px;
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-color: #757575;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--main-silver);
+}
+
+.input {
+  font-size: 24px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
