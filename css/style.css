@@ -227,6 +227,7 @@ body {
 }
 
 .mail-top {
+  fill: var(--main-silver);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -243,6 +244,7 @@ body {
 }
 
 .phone-top {
+  fill: var(--main-silver);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
