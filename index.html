@@ -114,17 +114,31 @@
               <div class="form-style-comment">    
               <label class="modal-form-label-comment" for="name">Komentarz</label>
              
-              <input class="input-comment" type="text" placeholder="Wprowadź tekst" id="name" />
+              <textarea class="input-comment" type="text" rows="7" placeholder="Wprowadź tekst" id="name"></textarea>
             
               </div>
             </form>
 
             <div class="statement">
-              <span>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</span>
+              <div class="statement-checkbox">
+                <svg width="16" height="15">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </div>
+              <div class="statement-text">
+              <span class="statement-text-silver">Oświadczam iż akceptuję</span>
+              <a href="">
+              <span class="statement-text-blue-underline">Regulamin</span>
+              </a>
+              <span class="statement-text-silver">i</span>
+              <a href="">
+              <span class="statement-text-blue-underline">Politykę Prywatności.</span>
+              </a>
+              </div>
             </div>
 
             <div class="send-button-div">
-              <button type="button" class="send-button">Wyślij
+              <button type="submit" class="send-button">Wyślij
               </button>
             </div>
 
@@ -132,8 +146,6 @@
           
         </div>
         </div>
-
-
 
         <div class="container">
           <div class="second-unit-position">
