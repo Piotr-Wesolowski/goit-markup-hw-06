@@ -895,7 +895,9 @@ color: var(--main-white);
 .overlay-text {
   display: flex;
   align-items: center;
-  text-align: center;
+  padding-left: 24px;
+  padding-right: 45px;
+  
 }
 
 .is-hidden {
