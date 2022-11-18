@@ -980,9 +980,17 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-style:has(input:focus) input {
+/* .form-style:has(input:focus) input {
+  border: 1px solid var(--main-blue);
+} */
+
+.input:focus-within {
   border: 1px solid var(--main-blue);
 }
+
+/* .input:focus-within svg {
+  fill: var(--main-blue);
+} */
 
 .form-style:has(input:focus) svg {
   fill: var(--main-blue);
@@ -1026,8 +1034,6 @@ body {
   margin-left: 40px;
   width: 448px;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
 
 .input-comment {
@@ -1035,20 +1041,21 @@ body {
   resize: none;
   width: 448px;
   height: 100%;
-  border: 0;
   padding-left: 16px;
   padding-top: 12px;
-  background-color: transparent;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+  outline: 0;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-style-comment:has(input:focus) input {
+.input-comment:focus-within {
+  border-color: var(--main-blue);
   border: 1px solid var(--main-blue);
 }
 
