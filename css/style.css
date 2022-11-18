@@ -1060,19 +1060,25 @@ body {
 }
 
 .statement-checkbox {
+  position: absolute;
+  
   cursor: pointer;
+  top: 25px;
+  left: 54px;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
+.statement-checkbox:checked
+
 .statement {
-  position: relative;
+  /* position: relative; */
   padding-top: 3px;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   width: 100%;
   height: 74px;
   font-family: "Roboto";
@@ -1082,6 +1088,8 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-silver);
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .statement-text {
