@@ -980,17 +980,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .form-style:has(input:focus) input {
-  border: 1px solid var(--main-blue);
-} */
-
 .input:focus-within {
   border: 1px solid var(--main-blue);
 }
 
-/* .input:focus-within svg {
-  fill: var(--main-blue);
-} */
 
 .form-style:has(input:focus) svg {
   fill: var(--main-blue);
@@ -1061,24 +1054,19 @@ body {
 
 .statement-checkbox {
   position: absolute;
-  
   cursor: pointer;
-  top: 25px;
-  left: 54px;
   width: 16px;
   height: 15px;
-  /* margin-right: 8px; */
+  margin-right: 8px;
 }
 
 .statement-checkbox:checked
 
 .statement {
-  /* position: relative; */
-  padding-top: 3px;
+  position: relative;
+  padding-top: 20px;
   box-sizing: border-box;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   width: 100%;
   height: 74px;
   font-family: "Roboto";
@@ -1088,40 +1076,33 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-silver);
-  margin-top: 20px;
-  margin-bottom: 30px;
+ 
+
+  
 }
 
 .statement-text {
+  
+  margin-top: 20px;
+  text-align: center;
   padding-top: 4px;
-  width: 395px;
+  width: 100%;
   height: 24px;
 }
 
 .statement-text-silver {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  
   color: var(--main-silver);
 }
 
 .statement-text-blue-underline {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--main-blue);
+
   text-decoration: underline;
   color: var(--main-blue);
 }
 
 .send-button-div {
-  /* margin-top: 30px; */
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
