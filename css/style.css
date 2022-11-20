@@ -672,6 +672,7 @@ body {
 
 .wrapper {
   display: flex;
+  width: 100%;
 }
 
 .section-right {
@@ -1149,19 +1150,15 @@ body {
 }
 
 .section-sign-in {
-  
   position: relative;
   box-sizing: border-box;
-  
-  width:648px;
+  width: 648px;
   height: 188px;
   z-index: 3;
-  
 }
 
 .sign-in-title {
-
-font-family: "Roboto";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   color: var(--main-white);
@@ -1172,31 +1169,64 @@ font-family: "Roboto";
   display: flex;
   align-items: center;
   position: absolute;
-  left: 78px;
-
+  left: 58px;
 }
 
 .sign-in-input {
-  
-position: absolute;
-left: 78px;
-top: 36px;
-width: 358px;
-height: 50px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-background-color: transparent;
-color: rgba(255, 255, 255, 0.6);
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-box-sizing: border-box;
-padding-left: 16px;
+  position: absolute;
+  left: 58px;
+  top: 36px;
+  right: 0;
+  max-width: 358px;
+  height: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
 
+.sign-in-button {
+  position: relative;
+  left: 428px;
+  top: 36px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.sign-in-button-icon {
+  fill: var(--main-white);
+  color: var(--main-white);
+  color: currentColor;
+}
+
+.sign-button-icon {
+  position: relative;
+  display: flex;
 }
