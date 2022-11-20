@@ -1083,7 +1083,7 @@ body {
 }
 
 .statement-checkbox-original {
-  visibility: hidden;
+  opacity: 0;
   width: 16px;
   height: 15px;
   position: absolute;
@@ -1091,52 +1091,16 @@ body {
   left: 55px;
 }
 
-.statement-checkbox-check
-  ~ .statement-checkbox-original
-  input:checked::after
-  svg {
-  position: absolute;
-  top: 20px;
-  left: 79px;
-  width: 16px;
-  height: 15px;
-  z-index: 3;
+/* .is-hidden-2 {
+  opacity: 0;
+} */
+
+.statement-checkbox-check ~ statement-checkbox-original input:checked {
+  opacity: 1;
 }
 
-.statement-checkbox-check
-  ~ .statement-checkbox-original
-  input:unchecked::after
-  svg {
-  visibility: hidden;
-  position: absolute;
-  top: 20px;
-  left: 79px;
-  width: 16px;
-  height: 15px;
-}
-
-.statement-checkbox-uncheck
-  ~ .statement-checkbox-original
-  input:checked::after
-  svg {
-  visibility: hidden;
-  position: absolute;
-  top: 20px;
-  left: 79px;
-  width: 16px;
-  height: 15px;
-}
-
-.statement-checkbox-uncheck
-  ~ .statement-checkbox-original
-  input:unchecked::after
-  svg {
-  position: absolute;
-  top: 20px;
-  left: 79px;
-  width: 16px;
-  height: 15px;
-  z-index: 3;
+.statement-checkbox-uncheck ~ statement-checkbox-original input:not(:checked) {
+  opacity: 1;
 }
 
 .statement-text {
@@ -1182,4 +1146,57 @@ body {
 .send-button:hover,
 .send-button:focus {
   cursor: pointer;
+}
+
+.section-sign-in {
+  
+  position: relative;
+  box-sizing: border-box;
+  
+  width:648px;
+  height: 188px;
+  z-index: 3;
+  
+}
+
+.sign-in-title {
+
+font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--main-white);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 78px;
+
+}
+
+.sign-in-input {
+  
+position: absolute;
+left: 78px;
+top: 36px;
+width: 358px;
+height: 50px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+background-color: transparent;
+color: rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+box-sizing: border-box;
+padding-left: 16px;
+
 }
