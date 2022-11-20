@@ -984,7 +984,6 @@ body {
   border: 1px solid var(--main-blue);
 }
 
-
 .form-style:has(input:focus) svg {
   fill: var(--main-blue);
 }
@@ -1052,22 +1051,9 @@ body {
   border: 1px solid var(--main-blue);
 }
 
-.statement-checkbox {
-  position: absolute;
-  cursor: pointer;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-}
-
-.statement-checkbox:checked
-
 .statement {
   position: relative;
-  padding-top: 20px;
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
+  width: 528px;
   height: 74px;
   font-family: "Roboto";
   font-style: normal;
@@ -1076,33 +1062,99 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-silver);
- 
+}
 
-  
+.statement-checkbox-uncheck {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  left: 55px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.statement-checkbox-check {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  left: 55px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.statement-checkbox-original {
+  visibility: hidden;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  left: 55px;
+}
+
+.statement-checkbox-check
+  ~ .statement-checkbox-original
+  input:checked::after
+  svg {
+  position: absolute;
+  top: 20px;
+  left: 79px;
+  width: 16px;
+  height: 15px;
+  z-index: 3;
+}
+
+.statement-checkbox-check
+  ~ .statement-checkbox-original
+  input:unchecked::after
+  svg {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  left: 79px;
+  width: 16px;
+  height: 15px;
+}
+
+.statement-checkbox-uncheck
+  ~ .statement-checkbox-original
+  input:checked::after
+  svg {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  left: 79px;
+  width: 16px;
+  height: 15px;
+}
+
+.statement-checkbox-uncheck
+  ~ .statement-checkbox-original
+  input:unchecked::after
+  svg {
+  position: absolute;
+  top: 20px;
+  left: 79px;
+  width: 16px;
+  height: 15px;
+  z-index: 3;
 }
 
 .statement-text {
-  
-  margin-top: 20px;
-  text-align: center;
-  padding-top: 4px;
-  width: 100%;
-  height: 24px;
+  position: absolute;
+  top: 20px;
+  left: 79px;
 }
 
 .statement-text-silver {
-  
   color: var(--main-silver);
 }
 
 .statement-text-blue-underline {
-
   text-decoration: underline;
   color: var(--main-blue);
 }
 
 .send-button-div {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
