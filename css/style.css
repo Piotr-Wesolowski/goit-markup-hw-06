@@ -976,7 +976,7 @@ body {
   outline: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-size: 24px;
+  font-size: 12px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1065,15 +1065,6 @@ body {
   color: var(--main-silver);
 }
 
-/* .statement-checkbox-uncheck {
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-  left: 55px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 .statement-checkbox-original {
   opacity: 0;
   width: 16px;
@@ -1156,7 +1147,6 @@ body {
 
 .section-sign-in {
   padding-left: 78px;
-
 }
 
 .sign-in-title {
@@ -1171,7 +1161,6 @@ body {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
-  
 }
 
 .sign-in-input {
@@ -1193,8 +1182,6 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   padding-left: 16px;
-
-  
 }
 
 .sign-in-positioning {
@@ -1204,8 +1191,6 @@ body {
 .sign-in-button {
   margin-left: 12px;
   position: relative;
-  /* left: 428px;
-  top: 36px; */
   border: none;
   width: 200px;
   height: 50px;
@@ -1230,5 +1215,3 @@ body {
   position: absolute;
   left: 148px;
 }
-
-
