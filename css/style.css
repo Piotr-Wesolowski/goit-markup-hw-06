@@ -1155,11 +1155,8 @@ body {
 }
 
 .section-sign-in {
-  position: relative;
-  box-sizing: border-box;
-  width: 648px;
-  height: 188px;
-  z-index: 3;
+  padding-left: 78px;
+
 }
 
 .sign-in-title {
@@ -1173,17 +1170,13 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 58px;
+  padding-bottom: 20px;
+  
 }
 
 .sign-in-input {
   outline: 0;
-  position: absolute;
-  left: 58px;
-  top: 36px;
-  right: 0;
-  max-width: 358px;
+  width: 358px;
   height: 50px;
   font-family: "Roboto";
   font-style: normal;
@@ -1200,12 +1193,19 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   padding-left: 16px;
+
+  
+}
+
+.sign-in-positioning {
+  display: flex;
 }
 
 .sign-in-button {
+  margin-left: 12px;
   position: relative;
-  left: 428px;
-  top: 36px;
+  /* left: 428px;
+  top: 36px; */
   border: none;
   width: 200px;
   height: 50px;
@@ -1230,3 +1230,5 @@ body {
   position: absolute;
   left: 148px;
 }
+
+
